@@ -30,7 +30,7 @@ Learn to recognize scams by practicing on fake ones. Like phishing training at w
 - **Family protection** — Guardian dashboard to track loved ones' progress
 - **Streak tracking** — Gamified with points and achievements
 - **Weak category focus** — More practice where you need it
-- **12+ realistic simulations** — Covering all major scam types
+- **21 realistic simulations** — Phishing, job scams, romance, crypto, tech support, tax/IRS, prize/lottery, grandparent, rental
 
 ## Scoring
 
