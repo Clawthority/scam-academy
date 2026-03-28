@@ -600,6 +600,212 @@ This is your final notice. Case number IRS-2026-78432."`,
     lesson: 'The IRS always contacts you by mail first. They will NEVER demand immediate payment, threaten arrest, or ask for gift cards. If concerned, call the IRS directly at 1-800-829-1040.'
   },
 
+  // === RENTAL SCAMS ===
+  rental_fake_listing: {
+    category: 'rental',
+    difficulty: 'beginner',
+    surface: 'email',
+    subject: 'Beautiful 2BR Apartment — Available Now! $950/mo',
+    body: `Hi there!
+
+Thanks for your interest in the apartment at 742 Maple Street, Apt 3B. It's a gorgeous 2-bedroom, 1-bath unit with hardwood floors, in-unit washer/dryer, and a private balcony. Pets welcome!
+
+Rent: $950/month (utilities included!)
+Available: Immediately
+
+Because of high demand, I'm offering a special deal:
+- First month FREE if you sign within 48 hours
+- Security deposit: only $500 (normally $950)
+
+To hold the unit, send a $500 deposit via Zelle or CashApp to secure your spot. I'll email you the lease to sign once payment is received.
+
+Unfortunately I'm currently out of the country managing a property in another state, so I can't do an in-person showing. But I can send you a video walkthrough!
+
+Let me know ASAP — this won't last!
+
+Best,
+David Chen
+Property Manager`,
+    redFlags: [
+      'Rent far below market rate for the area',
+      'Landlord is "out of town" — can\'t show the property',
+      'Asks for deposit BEFORE seeing the unit or signing a lease',
+      'Payment via Zelle or CashApp (no paper trail)',
+      'Artificial urgency (48 hours, special deal)',
+      'First month free is a classic hook'
+    ],
+    correctAction: 'STOP. Never send money without seeing an apartment in person and signing a real lease. Verify the owner via county property records.',
+    lesson: 'Fake rental listings use photos stolen from real listings at below-market prices to lure victims. The scammer collects deposits from dozens of people for a property they don\'t own or that doesn\'t exist. Always tour in person, verify ownership, and never pay via Zelle/CashApp for housing.'
+  },
+
+  rental_bait_switch: {
+    category: 'rental',
+    difficulty: 'intermediate',
+    surface: 'email',
+    subject: 'Re: Your application for 123 Oak Avenue',
+    body: `Hi!
+
+Great news — your application for 123 Oak Avenue has been pre-approved! 🎉
+
+Unfortunately, that specific unit was just rented (the listing hadn't been updated yet). BUT — we have a similar unit available at 456 Pine Road! It's actually a better deal:
+
+- 3BR/2BA instead of 2BR/1BA
+- Same price: $1,100/month
+- Move-in ready today!
+
+There's a small catch — this unit requires:
+1. Application fee: $75 (non-refundable)
+2. Background check: $50
+3. Holding deposit: $1,100 (one month's rent)
+
+We can do everything online! Just send the fees via Venmo to @ApexRentals-PM and I'll process everything within 2 hours.
+
+The original unit at Oak Ave was listed at $1,100 too, so you're getting MORE for the same price. This is actually a better deal!
+
+Ready to apply?
+
+— Jessica, Apex Property Management`,
+    redFlags: [
+      'Classic bait-and-switch — the good listing was never real',
+      'Multiple upfront fees (application, background check, deposit)',
+      'Payment via Venmo (no protection)',
+      'Pressure to pay quickly ("within 2 hours")',
+      '"Better deal" is designed to make you forget you were scammed',
+      'No in-person showing offered for the new unit'
+    ],
+    correctAction: 'WALK AWAY. The original listing was fake, and the "replacement" likely is too. Never pay application fees without seeing a unit and verifying the management company.',
+    lesson: 'Bait-and-switch rental scams advertise amazing properties to collect your info and fees, then redirect you to other "available" units. The original listing was never real. Always verify the management company independently (Google them, check BBB) and never pay fees before touring a unit in person.'
+  },
+
+  rental_cloned_listing: {
+    category: 'rental',
+    difficulty: 'advanced',
+    surface: 'social',
+    subject: null,
+    body: `[Facebook Marketplace listing]
+
+🏠 STUNNING 1BR Condo — Downtown! $1,200/mo
+📍 890 River Road, Unit 12A
+✨ Granite counters, stainless steel appliances, gym access, parking included!
+
+[15 high-quality photos — looks legitimate]
+
+Description:
+Beautiful 1BR/1BA condo in the heart of downtown. Walking distance to restaurants, shops, and public transit. Building amenities include gym, pool, and 24/7 concierge.
+
+Rent: $1,200/month (ALL utilities included!)
+Lease: 12 months
+Available: April 1st
+
+Contact: riverroad.rentals@gmail.com
+Text only: (555) 0123
+
+---
+
+[You text the number:]
+
+"Hi! I saw the listing on Facebook for 890 River Road. Is it still available?"
+
+[Response:]
+"Hi! Yes it's still available! We've had a lot of interest though. I actually manage this property for the owner. He lives overseas and hired me to find a tenant. I can meet you there Saturday at 2pm for a showing. But fair warning — we've had 6 inquiries today. If you want to lock it in before the showing, you can send a refundable holding deposit of $600 via Zelle and I'll take it off the market for you. If you don't like it at the showing, I refund you on the spot! 😊"`,
+    redFlags: [
+      'Listing is copied from a real Zillow/Realtor.com listing',
+      'Gmail contact, not a property management company',
+      '"Owner lives overseas" — can\'t verify ownership',
+      'Offers to refund holding deposit if you don\'t like it (they won\'t)',
+      'Urgency from manufactured interest ("6 inquiries today")',
+      'Asks for Zelle payment before any in-person meeting'
+    ],
+    correctAction: 'DO NOT SEND MONEY. Reverse-image-search the photos on Google. Verify the owner via county property records. Only tour in person with a verified agent.',
+    lesson: 'Scammers clone real rental listings — same photos, same address — but with their contact info. The real listing is on Zillow or a legitimate site; the scammer reposts it on Facebook/Craigslist with a lower price. Always reverse image search photos and verify ownership independently.'
+  },
+
+  rental_roommate_scam: {
+    category: 'rental',
+    difficulty: 'intermediate',
+    surface: 'chat',
+    subject: null,
+    body: `[Craigslist reply to your "Room Wanted" ad:]
+
+Hey! I saw your ad looking for a room. I actually have a perfect situation:
+
+🏠 Room in a 3BR house in Midtown
+💰 $700/month (includes utilities, wifi, Netflix)
+🛏️ Furnished room — queen bed, desk, closet
+🐕 Dog-friendly (I have a golden retriever named Cooper)
+
+I'm 28, work in tech, pretty chill. The other roommate is a nurse, she's barely home. We're looking for someone laid back who keeps common areas clean.
+
+The room is available now but I'm currently traveling for work until April 5th. To hold the room for you, I just need:
+- First month's rent: $700
+- Security deposit: $350
+
+You can Venmo me and I'll mail you the keys. I'll also send you a video tour of the house right now!
+
+Here's a video walkthrough: [link to Google Drive folder]
+
+Sound good? I'd love to lock this in before I get back! 🏡`,
+    redFlags: [
+      'Room available but person is "traveling" — can\'t meet',
+      'Below-market rent with too many perks (furnished, utilities included, Netflix)',
+      'Asks for full payment + deposit before meeting or seeing the room',
+      'Will "mail you the keys" (classic scam line)',
+      'Video walkthrough could be from Airbnb or stolen listing',
+      'Friendly, detailed story to build trust before the ask'
+    ],
+    correctAction: 'DO NOT PAY. Insist on meeting in person and seeing the room before any money changes hands. A real roommate will understand.',
+    lesson: 'Roommate scams prey on people desperate for affordable housing. The scammer builds a believable persona with details (name, job, pet) to seem real, then asks for money while "out of town." Never pay for a room you haven\'t seen in person, and never Venmo someone you haven\'t met.'
+  },
+
+  rental_application_harvest: {
+    category: 'rental',
+    difficulty: 'advanced',
+    surface: 'email',
+    subject: 'Application Received — Please Complete Full Rental Application',
+    body: `Thank you for your interest in 567 Elm Street, Unit 8!
+
+To process your rental application, please complete the attached form with the following information:
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+RENTAL APPLICATION — ELM PROPERTIES LLC
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+PERSONAL INFORMATION:
+☐ Full Legal Name:
+☐ Date of Birth:
+☐ Social Security Number:
+☐ Driver's License Number & State:
+☐ Current Address:
+☐ Previous Address (last 3 years):
+
+FINANCIAL INFORMATION:
+☐ Bank Name & Account Number:
+☐ Routing Number:
+☐ Credit Card Number (for credit check):
+☐ Employer Name & Salary:
+☐ Monthly Income:
+
+EMERGENCY CONTACT:
+☐ Name, Phone, & Relationship:
+
+APPLICATION FEE: $35 (send via Zelle to elmproperties.mgmt@gmail.com)
+
+Please reply to this email with all completed fields. We process applications within 24 hours!
+
+— Management Office
+Elm Properties LLC`,
+    redFlags: [
+      'Asks for SSN, driver\'s license, and bank account details in an EMAIL',
+      'Requests credit card number (never needed for a rental application)',
+      'Asks for routing and account numbers',
+      'Gmail address for "management company"',
+      'No secure portal — just reply to email with sensitive data',
+      'Small application fee ($35) to seem legitimate while harvesting your identity'
+    ],
+    correctAction: 'DO NOT FILL OUT. This is identity theft disguised as a rental application. Legitimate landlords use secure portals and never ask for SSN via email.',
+    lesson: 'Some rental scams don\'t want your deposit — they want your IDENTITY. By collecting SSN, bank info, and driver\'s license, scammers can open credit cards, take loans, and file tax returns in your name. Real landlords use secure application portals (like AppFolio or Zillow Rental Manager) — they never ask for sensitive info via email or text.'
+  },
+
   'job-equipment': {
     title: 'Remote Work Equipment Scam',
     category: 'Job Scams',
