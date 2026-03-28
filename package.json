@@ -1,0 +1,12 @@
+{
+  "name": "scam-academy",
+  "version": "1.0.0",
+  "description": "Learn to recognize scams by practicing on fake ones. Phishing training for everyone.",
+  "main": "training.js",
+  "scripts": {
+    "simulate": "node simulations.js",
+    "train": "node training.js"
+  },
+  "keywords": ["scam", "phishing", "training", "security", "awareness", "elder-protection", "cybersecurity"],
+  "license": "MIT"
+}
