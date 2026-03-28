@@ -280,6 +280,300 @@ Do NOT close this window or turn off your computer.`,
     lesson: 'Real virus warnings come from YOUR antivirus software, not from pop-up windows. Microsoft, Apple, and Google will NEVER show pop-ups asking you to call a number. Close the browser and move on.'
   },
 
+  // === JOB SCAMS ===
+  job_fake_check: {
+    category: 'job',
+    difficulty: 'intermediate',
+    surface: 'email',
+    subject: 'Welcome Aboard! Your First Payment is Ready',
+    body: `Dear New Hire,
+
+Welcome to Global Solutions Inc! We're excited to have you join our team as a Remote Data Entry Clerk ($35/hr).
+
+We've mailed you a cashier's check for $4,850. This covers:
+- Your first week salary: $1,400
+- Home office equipment allowance: $2,450
+- Software license: $1,000
+
+Please deposit the check into your bank account, then purchase the required equipment from our approved vendor portal:
+
+🔗 https://global-solutions-portal.com/shop
+
+You'll need to send $3,450 to our vendor via Zelle or gift cards to receive your equipment kit within 3 business days.
+
+Keep the remaining $1,400 as your signing bonus!
+
+HR Department
+Global Solutions Inc.`,
+    redFlags: [
+      'Check overpayment scheme — the check will bounce',
+      'Asks you to buy from a specific vendor (their site)',
+      'Payment via Zelle or gift cards',
+      'Unusually high pay ($35/hr for data entry)',
+      'You never had a real interview'
+    ],
+    correctAction: 'DO NOT DEPOSIT. This is a classic fake check scam. The check will bounce and you lose the money you sent.',
+    lesson: 'Legitimate employers will NEVER send you a check and ask you to send money elsewhere. The check is fake — it will bounce in days, and the money you sent is gone forever.'
+  },
+
+  job_upfront_fee: {
+    category: 'job',
+    difficulty: 'beginner',
+    surface: 'email',
+    subject: 'Congratulations! Selected for Premium Position',
+    body: `Dear Applicant,
+
+After reviewing your resume on Indeed, we'd like to offer you a position as a Customer Service Representative with TechServ Solutions.
+
+Position: Remote Customer Service Rep
+Salary: $28/hour + benefits
+Start Date: Next Monday
+
+To proceed, please complete the following before your start date:
+
+1. Background Check Fee: $49.99 (refundable after 90 days)
+2. Training Materials: $89.99
+3. Equipment Deposit: $150.00
+
+Pay here: 🔗 techserv-solutions.com/onboarding-fee
+
+Once payment is confirmed, we'll send your login credentials and schedule your orientation.
+
+HR Onboarding Team
+TechServ Solutions
+hr@techserv-solutions.net`,
+    redFlags: [
+      'Asks YOU to pay to get hired',
+      'Fees for background check, training, equipment',
+      'Says fees are "refundable" (they never are)',
+      '.net domain for a "tech company"',
+      'Salary too good to be true for customer service'
+    ],
+    correctAction: 'DO NOT PAY. Real jobs pay YOU — you never pay to get hired.',
+    lesson: 'If a job asks you to pay ANY fee — for training, equipment, background checks, or anything else — it\'s a scam. Legitimate employers cover these costs. You should NEVER pay to work.'
+  },
+
+  job_reshipping: {
+    category: 'job',
+    difficulty: 'advanced',
+    surface: 'email',
+    subject: 'Logistics Coordinator — Immediate Start (No Experience Needed)',
+    body: `Hello!
+
+We're PackageFlow LLC, a logistics company hiring Remote Shipping Coordinators. No experience required!
+
+Job Description:
+- Receive packages at your home address
+- Inspect and repackage items
+- Print prepaid shipping labels (we provide)
+- Drop packages at UPS/FedEx within 24 hours
+
+Pay: $25/package + $500 weekly base salary
+Average monthly earnings: $3,500-$5,000
+
+Requirements:
+- Must be home to receive deliveries
+- Reliable printer for shipping labels
+- Valid ID for tax purposes (upload to our portal)
+
+Apply now: 🔗 packageflow-llc.com/apply
+
+We'll send your first packages within 48 hours of approval!
+
+Best,
+Sarah Chen
+Recruiting Manager, PackageFlow LLC`,
+    redFlags: [
+      'Reshipping stolen goods — you become a fence',
+      'No interview process',
+      'No experience needed for "good" pay',
+      'Uses YOUR address (makes YOU liable)',
+      'Asks for ID upload (identity theft risk)'
+    ],
+    correctAction: 'DO NOT APPLY. Reshipping jobs are used to move stolen goods with YOUR address on them.',
+    lesson: 'Reshipping "jobs" use your address to receive stolen merchandise. You become the middleman, and when police trace the packages, they come to YOUR door. This is a federal crime even if you didn\'t know.'
+  },
+
+  job_interview_scam: {
+    category: 'job',
+    difficulty: 'intermediate',
+    surface: 'chat',
+    subject: null,
+    body: `LinkedIn Notification: Sarah from Apex Technologies wants to connect
+
+[New message from Sarah Miller, Talent Acquisition at Apex Technologies]
+
+Hi! I found your profile and was impressed by your background. We have an immediate opening for a Remote Project Manager — $75K-$95K base + benefits.
+
+Are you available for an interview today? We're doing all interviews via Google Chat for speed. Add me: sarah.apexcareers@gmail.com
+
+Looking forward to speaking with you! 🌟
+
+---
+
+[On Google Chat:]
+
+Hi! Thanks for connecting. Before the interview, I need to verify your identity for compliance. Can you please send me:
+
+1. Full legal name
+2. Date of birth
+3. Social Security Number
+4. Current address
+5. Bank name (for direct deposit setup)
+
+This is standard for our remote hiring process. Once verified, we'll start the interview! 😊`,
+    redFlags: [
+      'Personal email (gmail) not company email',
+      'Interview on Google Chat (not professional)',
+      'Asks for SSN BEFORE any interview',
+      'Asks for bank info upfront',
+      'Too eager to hire — no real interview'
+    ],
+    correctAction: 'BLOCK. This is identity theft, not a job interview.',
+    lesson: 'Never give your SSN, date of birth, or bank information before a formal job offer from a verified company. Real companies verify identity AFTER hiring, not before an interview on a chat app.'
+  },
+
+  job_task_scam: {
+    category: 'job',
+    difficulty: 'intermediate',
+    surface: 'sms',
+    subject: null,
+    body: `📱 WhatsApp Message from Unknown Number:
+
+Hi! I'm Lisa from AppBoost Marketing. We found your profile on Indeed.
+
+We're hiring remote workers to rate and review apps on the App Store. You earn $2-$5 per task. No experience needed!
+
+Here's how it works:
+1. Complete 40 "training" tasks (unpaid but fast)
+2. After training, you start earning immediately
+3. Tasks take 30 seconds each
+4. Withdraw anytime after $50 minimum
+
+First bonus: Deposit $50 to unlock VIP tasks that pay $10-$20 each!
+
+Sign up: appboost-tasks.com/register
+
+Most people earn $200-$500/day after training! 💰`,
+    redFlags: [
+      'Unsolicited WhatsApp message',
+      'Requires deposit to "unlock" higher pay',
+      'Fake reviews/ratings (against App Store rules)',
+      '"Too good to be true" earnings',
+      'Unpaid "training" tasks'
+    ],
+    correctAction: 'BLOCK. This is a task scam — you do free work, then they ask for money to "unlock" earnings.',
+    lesson: 'Task scams lure you with easy work, then require a deposit or upgrade fee to access your earnings. Once you pay, they disappear or ask for more. Real jobs never ask you to deposit money to earn money.'
+  },
+
+  job_crypto_mule: {
+    category: 'job',
+    difficulty: 'advanced',
+    surface: 'chat',
+    subject: null,
+    body: `📩 Telegram message from "CryptoFlow Finance":
+
+Hey! 👋 We're a fast-growing crypto trading firm and we need reliable people to help process transactions.
+
+Your role as a "Fund Processor":
+- Receive crypto (USDT/USDC) to your wallet
+- Convert to USD and transfer to specified bank accounts
+- Keep 8-12% as your commission
+- Work from anywhere, 1-2 hours/day
+- Average earnings: $1,500-$4,000/week
+
+No experience needed — we provide full training!
+
+To start, just send your:
+✅ Wallet address
+✅ Bank account for receiving transfers
+✅ Photo of your ID (for "KYC compliance")
+
+We're onboarding 10 new processors today. Interested?
+
+— Jordan, Head of Operations @ CryptoFlow`,
+    redFlags: [
+      'Money laundering disguised as a job',
+      'Moving money through YOUR accounts makes YOU liable',
+      'Telegram-based (no accountability)',
+      'Asks for bank account and ID upfront',
+      'Unrealistic pay for minimal work',
+      '8-12% commission is the classic mule payment structure'
+    ],
+    correctAction: 'BLOCK. You would be a money mule — this is money laundering, a serious federal crime.',
+    lesson: 'Crypto "fund processor" jobs are money laundering schemes. By moving dirty money through your accounts, YOU become the criminal — not the person who recruited you. When the FBI traces the money, it leads to YOUR bank account. Never let anyone use your accounts to move money.'
+  },
+
+  job_flex_offer: {
+    category: 'job',
+    difficulty: 'beginner',
+    surface: 'sms',
+    subject: null,
+    body: `📱 Text from +1 (555) 0123:
+
+Hi! I'm Jessica from FlexJobs Inc. We have a flexible part-time position available:
+
+💼 Remote Social Media Manager
+💰 $45/hour | 2-3 hrs/day | Work from home
+📅 Start immediately
+
+Requirements:
+- Smartphone or laptop
+- 1 hour of online training
+
+Interested? Reply YES and I'll send you the application link!
+
+Or apply directly at: flexjobs-hiring.com/apply
+
+We're filling spots fast! 🚀`,
+    redFlags: [
+      'Unsolicited text from unknown number',
+      'Domain "flexjobs-hiring.com" is not the real FlexJobs.com',
+      'Too-high pay ($45/hr) for simple work',
+      'Pressure to reply fast',
+      'No real interview process'
+    ],
+    correctAction: 'DELETE. Do not reply or click the link. Real job boards don\'t recruit via random texts.',
+    lesson: 'Scammers impersonate real job boards (like FlexJobs) with slightly different URLs. If you get an unsolicited job text, search for the company directly — never click their link. Real recruiters contact you through official channels, not random texts.'
+  },
+
+  job_freelance_escrow: {
+    category: 'job',
+    difficulty: 'intermediate',
+    surface: 'email',
+    subject: 'Your Freelance Application Was Approved! 🎉',
+    body: `Dear Freelancer,
+
+Congratulations! Your application to WorkHub Global has been approved.
+
+You've been selected for: Senior Content Writer
+Rate: $85/article (500 words)
+Expected volume: 10-20 articles/week
+
+To activate your account and receive your first assignments, please:
+
+1. Create a free account at workhub-global.com/activate
+2. Purchase your Writer Verification Badge: $29.99 (one-time)
+3. Complete a 10-minute writing sample (unpaid)
+
+Your Badge fee is refunded after your first 5 articles!
+
+Once verified, you'll have access to our full job board with 500+ writing gigs.
+
+Welcome to the team!
+
+WorkHub Global — Freelancer Success Team`,
+    redFlags: [
+      'Must pay to "activate" account',
+      'Unpaid writing sample (free work)',
+      '"Verification badge" is not a real thing',
+      'Refund promise is a hook — they vanish after you pay',
+      'High pay rate to make you overlook the fee'
+    ],
+    correctAction: 'DELETE. Legitimate freelance platforms (Upwork, Fiverr) never charge you to apply or get verified.',
+    lesson: 'Real freelance platforms make money from clients, not freelancers. If a platform asks YOU to pay a fee to access work — whether it\'s a "badge," "activation," or "verification" — it\'s a scam. Upwork, Fiverr, and others never charge upfront fees.'
+  },
+
   // === IRS/TAX SCAM ===
   irs_scam: {
     category: 'tax',
@@ -304,6 +598,63 @@ This is your final notice. Case number IRS-2026-78432."`,
     ],
     correctAction: 'HANG UP. The IRS will NEVER call you demanding payment or threatening arrest.',
     lesson: 'The IRS always contacts you by mail first. They will NEVER demand immediate payment, threaten arrest, or ask for gift cards. If concerned, call the IRS directly at 1-800-829-1040.'
+  },
+
+  'job-equipment': {
+    title: 'Remote Work Equipment Scam',
+    category: 'Job Scams',
+    difficulty: 'beginner',
+    description: 'You got hired for a remote data entry job! But your new "employer" needs you to purchase equipment from their approved vendor before you can start...',
+    stages: [
+      {
+        scenario: 'You received an email after applying to a remote job on a popular job board. The company, "DataFlow Solutions," is offering $28/hr for data entry work from home.',
+        messages: [
+          {
+            sender: 'HR Manager — DataFlow Solutions',
+            text: `Hi! Congratulations, we'd love to offer you the Remote Data Entry position at $28/hr. We were very impressed with your application.
+
+Before we can get you started, we need to set up your workstation. We'll send you a check for $2,400 to cover equipment. Please deposit it, then purchase your setup from our approved vendor at dataflow-equipment-portal.com.
+
+What's your full name and mailing address so we can send the check?`,
+            isScam: true,
+            hint: 'A real employer provides equipment directly — they never ask you to buy from a specific vendor with reimbursement.'
+          }
+        ],
+        redFlags: [
+          'Hired without a real interview',
+          'Asks you to buy equipment from a "vendor" they specify',
+          'Sending a check to deposit (classic overpayment scam)',
+          'Unusually high pay for simple data entry',
+          'Vague company with no verifiable presence'
+        ],
+        correctAction: 'STOP. Do not deposit any check or buy from their vendor. Research the company independently — call the real company directly using contact info from their official website, not what the email provides.',
+        lesson: 'In a real equipment scam, the check bounces after you\'ve already spent money on their fake vendor site. You lose the money, and the "employer" disappears. Real companies ship equipment directly or have you use your own. Never deposit a check and send money elsewhere.'
+      },
+      {
+        scenario: 'You haven\'t responded yet. They follow up urgently.',
+        messages: [
+          {
+            sender: 'HR Manager — DataFlow Solutions',
+            text: `Hi again! Just following up — we have 3 other candidates waiting for this position. We need your address by end of day to secure your spot.
+
+Also, you'll need to purchase the equipment within 48 hours of receiving the check or the offer expires. Our vendor handles everything — laptop, headset, software licenses, ergonomic chair. It's all top-of-the-line!
+
+This is a really great opportunity. Don't miss out! 🙂`,
+            isScam: true,
+            hint: 'Urgency + pressure + too-good-to-be-true benefits = scam playbook.'
+          }
+        ],
+        redFlags: [
+          'Artificial urgency ("end of day," "48 hours")',
+          'Manufactured scarcity ("3 other candidates")',
+          'Excessive enthusiasm to pressure you',
+          'Still no real interview or contract',
+          'Emojis from "HR" in professional context'
+        ],
+        correctAction: 'BLOCK and REPORT. This is a confirmed scam. Report the email to the job board where you found the posting, and to the FTC at reportfraud.ftc.gov.',
+        lesson: 'Scammers create urgency to prevent you from thinking critically. A real employer gives you time, provides a written contract, and never pressures you to act immediately or lose the opportunity. If someone is pushing you to move fast with money — it\'s a scam.'
+      }
+    ]
   }
 };
 
