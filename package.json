@@ -7,6 +7,17 @@
     "simulate": "node simulations.js",
     "train": "node training.js"
   },
-  "keywords": ["scam", "phishing", "training", "security", "awareness", "elder-protection", "cybersecurity"],
-  "license": "MIT"
+  "keywords": [
+    "scam",
+    "phishing",
+    "training",
+    "security",
+    "awareness",
+    "elder-protection",
+    "cybersecurity"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "node-telegram-bot-api": "^0.67.0"
+  }
 }

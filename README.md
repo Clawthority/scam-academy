@@ -1,16 +1,31 @@
 # 🎓 Scam Academy
 
-Learn to recognize scams by practicing on fake ones. Like phishing training at work, but for everyone.
+**The scam simulator that trains you to spot fraud before it costs you money.**
+
+Scammers are getting better. Reading about scams isn't enough. Scam Academy sends you realistic scam simulations so you can practice spotting them — and learn from your mistakes in a safe environment.
+
+Like phishing training at work, but for everyone — your parents, your grandparents, your friends who keep clicking suspicious links.
 
 ## How It Works
 
 ```
-1. You receive a realistic scam simulation
+1. You receive a realistic scam simulation (email, SMS, chat)
 2. You decide: Is this a scam? (✅ or ❌)
 3. If you fell for it → instant lesson with red flags explained
 4. If you spotted it → points + streak bonus
 5. Difficulty adapts based on your performance
 ```
+
+## 🤖 Telegram Bot
+
+Scam Academy runs as a Telegram bot. Start training in seconds:
+
+1. Open [@ScamAcademyBot](https://t.me/ScamAcademyBot) on Telegram
+2. Tap **Start** to receive your first simulation
+3. Decide: scam or legit?
+4. Learn from the explanation
+
+No app to install. No account to create. Just open Telegram and start.
 
 ## Training Library (12 Simulations)
 
@@ -24,13 +39,20 @@ Learn to recognize scams by practicing on fake ones. Like phishing training at w
 | 💻 Tech support | Fake virus popup | Intermediate |
 | 🏛️ Tax/IRS | Fake IRS voicemail | Intermediate |
 
+## Who It's For
+
+- **You** — Everyone encounters scams. Practice beats panic.
+- **Your parents/grandparents** — Older adults lose $3B+ to scams yearly. Guardian dashboard tracks their progress.
+- **Your team** — Enterprise plans for companies that want better security culture than a boring annual training video.
+- **Schools** — Teach digital literacy that actually sticks.
+
 ## Features
 
 - **Adaptive difficulty** — Gets harder as you improve
 - **Family protection** — Guardian dashboard to track loved ones' progress
 - **Streak tracking** — Gamified with points and achievements
 - **Weak category focus** — More practice where you need it
-- **21 realistic simulations** — Phishing, job scams, romance, crypto, tech support, tax/IRS, prize/lottery, grandparent, rental
+- **21+ realistic simulations** — Phishing, job scams, romance, crypto, tech support, tax/IRS, prize/lottery, grandparent, rental
 
 ## Scoring
 
@@ -52,9 +74,16 @@ Learn to recognize scams by practicing on fake ones. Like phishing training at w
 ## Quick Start
 
 ```bash
+export TELEGRAM_BOT_TOKEN="your-token-here"
 npm install
+node bot-standalone.js    # Start the Telegram bot
+```
+
+## CLI
+
+```bash
 node simulations.js random | node format.js  # Get a random simulation
-node training.js stats USER_ID | node format.js  # Check stats
+node training.js stats USER_ID               # Check stats via CLI
 ```
 
 ## Monetization
