@@ -27,17 +27,20 @@ Scam Academy runs as a Telegram bot. Start training in seconds:
 
 No app to install. No account to create. Just open Telegram and start.
 
-## Training Library (12 Simulations)
+## Training Library (28 Categories, 222+ Simulations)
 
 | Category | Simulations | Difficulty |
 |----------|-------------|------------|
-| 🎣 Phishing | Amazon, Apple, Bank | Beginner → Intermediate |
-| 🏆 Prize scams | Email + SMS | Beginner |
-| 💕 Romance | Dating scam chat | Intermediate |
-| 👴 Grandparent | "I'm in jail, send bail" | Intermediate |
-| ₿ Crypto | Fake airdrop, double scam | Beginner → Advanced |
-| 💻 Tech support | Fake virus popup | Intermediate |
-| 🏛️ Tax/IRS | Fake IRS voicemail | Intermediate |
+| 🎣 Phishing | Amazon, Apple, Bank (8 variants each) | Beginner → Intermediate |
+| 🏆 Prize/Lottery | Email, SMS (8 variants each) | Beginner |
+| 💕 Romance | Dating scam chat (8 variants) | Intermediate |
+| 👴 Grandparent | "I'm in jail, send bail" (8 variants) | Intermediate |
+| ₿ Crypto | Fake airdrop, double-up (8 variants each) | Beginner → Advanced |
+| 💻 Tech support | Fake virus popup, remote access (8 variants) | Intermediate |
+| 🏛️ Tax/IRS | Fake IRS voicemail, refund scam (8 variants) | Intermediate |
+| 💼 Job scams | Fake recruiter, check cashing, crypto mule, reshipping, task scam, freelance escrow (8 variants each) | Intermediate → Advanced |
+| 🏠 Rental | Fake listing, deposit scam, cloned listing, roommate, application harvest (8 variants each) | Intermediate |
+| 🔗 Bridge (Scam Shield) | Real-world detections used as training (3+ live) | Adaptive |
 
 ## Who It's For
 
@@ -52,7 +55,7 @@ No app to install. No account to create. Just open Telegram and start.
 - **Family protection** — Guardian dashboard to track loved ones' progress
 - **Streak tracking** — Gamified with points and achievements
 - **Weak category focus** — More practice where you need it
-- **21+ realistic simulations** — Phishing, job scams, romance, crypto, tech support, tax/IRS, prize/lottery, grandparent, rental
+- **222+ realistic simulations** — Phishing, job scams, romance, crypto, tech support, tax/IRS, prize/lottery, grandparent, rental + Scam Shield bridge
 
 ## Scoring
 
@@ -101,6 +104,27 @@ node training.js stats USER_ID               # Check stats via CLI
 > "You can't learn to swim by reading about swimming. You have to get in the water."
 
 Studies show that **practiced recognition** is 3x more effective than **passive awareness**. By simulating real scams in a safe environment, users build real skills — not just knowledge.
+
+### The Numbers
+
+- **$10B+** lost to scams in the US alone in 2025 (FTC)
+- **1 in 3** adults encounter a scam attempt weekly
+- **Traditional awareness training** has a 95% failure rate against real phishing
+- **Simulation-based training** reduces click rates by up to 60% (KnowBe4 data)
+
+## FAQ
+
+**Is this safe? Will I get real scams?**
+No. All simulations are generated in-app. No real scam messages are sent. You train in a completely safe sandbox.
+
+**Can I use this for my elderly parents?**
+Yes — the Family plan includes a guardian dashboard. You can see how your loved ones are progressing and where they need more practice.
+
+**What platforms does it support?**
+Currently Telegram. WhatsApp and SMS are on the roadmap.
+
+**How is this different from my company's phishing training?**
+Scam Academy covers real-world scams (not just corporate phishing), adapts to your skill level, and uses gamification to keep you engaged. It's phishing training that actually works.
 
 ## License
 

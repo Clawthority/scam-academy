@@ -808,8 +808,10 @@ Elm Properties LLC`,
 
   'job-equipment': {
     title: 'Remote Work Equipment Scam',
-    category: 'Job Scams',
+    category: 'job',
     difficulty: 'beginner',
+    surface: 'email',
+    subject: 'Welcome to DataFlow Solutions — Next Steps',
     description: 'You got hired for a remote data entry job! But your new "employer" needs you to purchase equipment from their approved vendor before you can start...',
     stages: [
       {
@@ -926,8 +928,37 @@ function getCategories() {
   return categories;
 }
 
+// --- Scam Shield Bridge Integration ---
+// Auto-imports real-world scam detections from Scam Shield
+const path = require('path');
+const fs = require('fs');
+const BRIDGE_SIMS_PATH = path.resolve(__dirname, '..', 'shared', 'exported-sims', 'bridge-sims.js');
+
+function loadBridgeSims() {
+  if (fs.existsSync(BRIDGE_SIMS_PATH)) {
+    try {
+      const bridgeSims = require(BRIDGE_SIMS_PATH);
+      let count = 0;
+      for (const [key, sim] of Object.entries(bridgeSims)) {
+        if (!SIMULATIONS[key]) {
+          SIMULATIONS[key] = sim;
+          count++;
+        }
+      }
+      if (count > 0) {
+        console.error(`[Scam Academy] Loaded ${count} bridge simulations from Scam Shield`);
+      }
+    } catch (e) {
+      console.error(`[Scam Academy] Could not load bridge sims: ${e.message}`);
+    }
+  }
+}
+
+// Load bridge sims on startup
+loadBridgeSims();
+
 // Export
-module.exports = { SIMULATIONS, getSimulation, getNextSimulation, getCategories };
+module.exports = { SIMULATIONS, getSimulation, getNextSimulation, getCategories, loadBridgeSims };
 
 // CLI
 if (require.main === module) {
