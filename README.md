@@ -6,6 +6,14 @@ Scammers are getting better. Reading about scams isn't enough. Scam Academy send
 
 Like phishing training at work, but for everyone — your parents, your grandparents, your friends who keep clicking suspicious links.
 
+## What It Does
+
+- Sends you realistic scam simulations (email, SMS, chat)
+- Challenges you to identify: scam or legit?
+- Provides instant feedback with red flag explanations
+- Adapts difficulty based on your performance
+- Tracks streaks and gamifies learning
+
 ## How It Works
 
 ```
@@ -74,7 +82,16 @@ No app to install. No account to create. Just open Telegram and start.
 - 🎣 Phishing Master — All phishing sims passed
 - 🛡️ Scam Expert — 20+ passed
 
+## What's New
+
+- **Rental scam simulations** (8 variants) — fake listings, deposit scams, cloned ads, roommate cons, application harvesters
+- **Job scam simulations** (48 variants across 6 subtypes) — fake recruiters, check cashing, crypto mule, reshipping, task scams, freelance escrow
+- **Scam Shield bridge** — real-world scam detections automatically become training scenarios
+- **Guardian dashboard** — track family members' progress and weak areas
+
 ## Quick Start
+
+**Prerequisites:** Node.js 18+, a Telegram bot token (get one from [@BotFather](https://t.me/BotFather))
 
 ```bash
 export TELEGRAM_BOT_TOKEN="your-token-here"
@@ -125,6 +142,10 @@ Currently Telegram. WhatsApp and SMS are on the roadmap.
 
 **How is this different from my company's phishing training?**
 Scam Academy covers real-world scams (not just corporate phishing), adapts to your skill level, and uses gamification to keep you engaged. It's phishing training that actually works.
+
+## Related Products
+
+- **[Scam Shield](../scam-shield)** — Analyze suspicious messages, links, and crypto addresses before you click. Scam Shield detections feed directly into Scam Academy training scenarios.
 
 ## License
 
