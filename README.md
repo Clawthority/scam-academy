@@ -2,7 +2,9 @@
 
 **The scam simulator that trains you to spot fraud before it costs you money.**
 
-Scammers are getting better. Reading about scams isn't enough. Scam Academy sends you realistic scam simulations so you can practice spotting them — and learn from your mistakes in a safe environment.
+Scammers are getting smarter. Every day, 1 in 3 adults encounters a scam attempt — and the cost is real: $10B+ lost annually in the US alone. Reading about scams isn't enough. You need practice.
+
+Scam Academy sends you realistic scam simulations so you can spot fraud in the wild — before it touches your wallet. Think of it as phishing training that actually works, minus the boring corporate videos.
 
 Like phishing training at work, but for everyone — your parents, your grandparents, your friends who keep clicking suspicious links.
 
@@ -128,6 +130,17 @@ Studies show that **practiced recognition** is 3x more effective than **passive 
 - **1 in 3** adults encounter a scam attempt weekly
 - **Traditional awareness training** has a 95% failure rate against real phishing
 - **Simulation-based training** reduces click rates by up to 60% (KnowBe4 data)
+
+## Scam Academy vs. Traditional Training
+
+| Feature | Scam Academy | Corporate Training |
+|---------|-------------|-------------------|
+| Real-world scenarios | ✅ Phishing, job, romance, crypto, rental | Usually only email phishing |
+| Adaptive difficulty | ✅ Gets harder as you improve | ❌ Static content |
+| Family-ready | ✅ Guardian dashboard | ❌ Not designed for families |
+| Gamification | ✅ Points, streaks, achievements | ❌ Compliance checkbox |
+| Covers all scam types | ✅ 28 categories | ❌ 1-2 categories |
+| Engaging | ✅ People actually use it | ❌ Boring, skipped annually |
 
 ## FAQ
 
