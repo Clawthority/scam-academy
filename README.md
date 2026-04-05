@@ -159,6 +159,15 @@ Scam Academy covers real-world scams (not just corporate phishing), adapts to yo
 ## Related Products
 
 - **[Scam Shield](../scam-shield)** — Analyze suspicious messages, links, and crypto addresses before you click. Scam Shield detections feed directly into Scam Academy training scenarios.
+- **[MindfulBot](../mindful-bot)** — Reduce screen time with behavioral science-backed micro-challenges. Scam Academy users who complete training often use MindfulBot to build healthier digital habits.
+
+### How Scam Shield → Scam Academy Works
+
+When Scam Shield detects a new scam variant in the wild:
+1. The detection is logged with threat indicators (domain patterns, message templates, sender tactics)
+2. Scam Academy automatically generates a training simulation based on the real detection
+3. Users encounter the live scam as training before encountering it in the real world
+4. This creates a proactive defense — you learn about today's scams today
 
 ## License
 
