@@ -2,7 +2,9 @@
 
 **The scam simulator that trains you to spot fraud before it costs you money.**
 
-Scammers are getting smarter. Every day, 1 in 3 adults encounters a scam attempt — and the cost is real: $10B+ lost annually in the US alone. Reading about scams isn't enough. You need practice.
+Every day, 1 in 3 adults encounters a scam attempt. The cost? **$10B+ lost annually** in the US alone. Reading about scams isn't enough — you need practice.
+
+> "You can't learn to swim by reading about swimming."
 
 Scam Academy sends you realistic scam simulations so you can spot fraud in the wild — before it touches your wallet. Think of it as phishing training that actually works, minus the boring corporate videos.
 
